@@ -5,7 +5,8 @@
 - https://docs.docker.com/get-docker/
 - https://docs.docker.com/compose/install/
 - The command below will create a django container and automatically import the data from pets.csv
-`docker-compose up --build -d`
+- `docker-compose up --build -d`
+- The api should be now up and running and visiting `http://localhost` should show a page with `Welcome to Pet-API`
 
 - To stop the running cointainer
 `docker-compose stop`
