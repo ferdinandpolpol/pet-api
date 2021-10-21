@@ -5,9 +5,17 @@
 - The command below will create a django container and automatically import the data from pets.csv
 `docker-compose up --build -d`
 
-## Using the API
+- To stop the running cointainer
+`docker-compose stop`
+
+
+## Using the API with cUrl
 ### GET
 ```
+curl "http://localhost/pet/"
+
+# You can also filter by passing the parameters species, name, age
+curl "http://localhost/pet/?species=dog" 
 ```
 
 ### POST
